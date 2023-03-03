@@ -12,7 +12,10 @@
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
     "noEmit": true
-  },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  }, 
+  "include": ["frontend/**/*.ts", "frontend/**/*.d.ts", "frontend/**/*.tsx", "frontend/**/*.vue", "server/**/*.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "ts-node": {
+    "esm": true,  
+  }, 
 }
